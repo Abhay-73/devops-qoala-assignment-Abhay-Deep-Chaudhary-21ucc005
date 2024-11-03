@@ -1,0 +1,26 @@
+
+services:
+  nginx:
+    build: 
+      context: .
+      dockerfile: nginx/Dockerfile
+    image: nginx-app:latest
+    container_name: local-nginx
+    ports:
+      - "80:80"
+    networks:
+      - app-network
+    depends_on:
+      - python-app
+
+  python-app:
+    build:
+      context: .
+      dockerfile: Python/Dockerfile
+    image: python-app:latest
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
