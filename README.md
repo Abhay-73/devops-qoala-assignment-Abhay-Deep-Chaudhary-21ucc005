@@ -24,13 +24,22 @@ The following tasks were completed during the assignment:
 8. Again repeated the process of building images and containers on the EC2 instance and edited the security inbound rules to access it on port 80.
 9. Verified the deployed the application with the help of public IP address of instance and connected to its port 80 via my browser and finally took the screenshot of docker-compose logs.
 10. Finally uploaded everything on this GitHub repository and granted access to `devops@qoala.id`.
+11. Added a `Report.pdf` to the github repository.
 
 ## Screenshots
 
-1. Application running on EC2 instance:
+1. Application running on EC2 instance with public IP `15.207.112.168`:
     ![EC2_instance](Application_on_EC2_instance.png)
-   
-   
+2. Nginx logs showing successful requests on EC2 instance:
+    ![EC2_instance_logs](EC2_instance_logs.png)
+3. Application running on localhost:
+    ![LocalHost](Application_local.png)
+4. Nginx logs showing successful requests on LocalHost:
+    ![LocalHost_logs](Logs_on_local.png)
+
+   ## AWS public IP endpoint
+    - `http://15.207.112.168`
+      
 
 
 ---
