@@ -27,7 +27,8 @@ The following tasks were completed during the assignment:
 
 ## Screenshots
 
-1. Application running on browser:
+1. Application running on EC2 instance:
+    ![EC2_instance](Application_on_EC2_instance.png)
    
    
 
